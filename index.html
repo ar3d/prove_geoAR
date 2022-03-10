@@ -16,14 +16,12 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-image
-                    src="assets/guerrieri.png"
-                    gps-entity-place="latitude: 40.725766791197266; longitude: 8.565150015056135;"
-                ></a-image>
-                <a-image
-                    src="assets/muro.jpeg"
-                    gps-entity-place="latitude: 40.72523829022807; longitude: 8.565557710826399;"
-                ></a-image>
+       <a-box
+        look-at="[gps-camera]"
+        scale="150 150 150"
+        gps-entity-place="latitude: 40.72523829022807; longitude: 8.565557710826399;"
+      ></a-box>
+                
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
