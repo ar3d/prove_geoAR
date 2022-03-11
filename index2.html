@@ -14,8 +14,8 @@
         vr-mode-ui="enabled: false"
         arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'>
 
-        <a-camera gps-camera rotation-reader></a-camera>
-        <a-text value="This will always face the user." look-at="[gps-camera]" scale="75 75 75" gps-entity-place="latitude: 40.7256253160142; longitude: 8.565246574580671;"></a-text>
+        <a-camera gps-camera='simulateLatitude: 40.725645642933955; simulateLongitude: 8.565391413867475' rotation-reader></a-camera>
+        <a-text value="Ciao FAVA!" look-at="[gps-camera]" scale="75 75 75" gps-entity-place="latitude: 40.72835801146639; longitude: 8.569050282239916;"></a-text>
         </a-camera>
     </a-scene>
 </body>
