@@ -85,7 +85,7 @@ function renderPlaces(places) {
         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         text.setAttribute('title', place.name);
         text.setAttribute('href', 'https://www.ar3d.it');
-        text.setAttribute('scale', '15 15 15');
+        text.setAttribute('scale', '5 5 5');
 
         text.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded', { detail: { component: this.el }}))
