@@ -86,6 +86,7 @@ function renderPlaces(places) {
         text.setAttribute('title', place.name);
         text.setAttribute('href', 'https://www.ar3d.it');
         text.setAttribute('scale', '5 5 5');
+		text.setAttribute('clicker');
 
         text.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded', { detail: { component: this.el }}))
@@ -94,3 +95,16 @@ function renderPlaces(places) {
         scene.appendChild(text);
     });
 }
+
+AFRAME.registerComponent('clicker', {
+    // define a url in the schema
+    schema: {
+      href: {text}
+    },
+    init: function() {
+      // when clicked - change the location:
+      this.el.addEventListener("click", e => {
+        window.location = this.data.href;
+      })
+    }
+  })
