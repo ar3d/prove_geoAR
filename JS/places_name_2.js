@@ -1,13 +1,13 @@
 const loadPlaces = function (coords) {
     // COMMENT FOLLOWING LINE IF YOU WANT TO USE STATIC DATA AND ADD COORDINATES IN THE FOLLOWING 'PLACES' ARRAY
-    const method = 'api';
+//const method = 'api';
 
     const PLACES = [
         {
-            name: "Your place name",
+            name: "Ciao",
             location: {
-                lat: 0, // add here latitude if using static data
-                lng: 0, // add here longitude if using static data
+                lat: 40.72555620444061, // add here latitude if using static data
+                lng: 8.56526266783476, // add here longitude if using static data
             }
         },
     ];
@@ -69,8 +69,8 @@ window.onload = () => {
                     const text = document.createElement('a-link');
                     text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
                     text.setAttribute('title', place.name);
-                    text.setAttribute('href', 'http://www.example.com/');
-                    text.setAttribute('scale', '13 13 13');
+                    text.setAttribute('href', 'https://www.ar3d.it/');
+                    text.setAttribute('scale', '10 10 10');
 
                     text.addEventListener('loaded', () => {
                         window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
