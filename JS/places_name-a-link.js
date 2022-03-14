@@ -89,19 +89,18 @@ function renderPlaces(places) {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
 
-         // add place icon
-                    let icon = document.createElement('a-image');
-                    icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-                    icon.setAttribute('title', place.name);
-                    icon.setAttribute('src', '../assets/map-marker.png');
-					icon.setAttribute('href', place.link);
-                    icon.setAttribute('scale', '20, 20');
+        // add place name
+        let text = document.createElement('a-link');
+        text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        text.setAttribute('title', place.name);
+        text.setAttribute('href', place.link);
+        text.setAttribute('scale', '5 5 5');
 
-        icon.addEventListener('loaded', () => {
+        text.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded', { detail: { component: this.el }}))
         });
 
-        scene.appendChild(icon);
+        scene.appendChild(text);
     });
 }
 
