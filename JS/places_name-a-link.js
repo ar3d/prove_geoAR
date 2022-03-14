@@ -91,7 +91,7 @@ function renderPlaces(places) {
 
         // add place name
         let text = document.createElement('a-link');
-		text.setAttribute('visualAspectEnabled', 'false');
+		text.setAttribute('visualAspectEnabled', 'true');
 		text.setAttribute('backgroundColor', 'white');
 		text.setAttribute('borderColor', 'red');
         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
