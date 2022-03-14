@@ -35,8 +35,7 @@ function staticLoadPlaces() {
             location: {
                 lat: 40.72555620444061, // change here latitude if using static data
                 lng: 8.56526266783476, // change here longitude if using static data
-            },
-			link: "https://www.ar3d.it"
+            }
         },
     ];
 }
@@ -85,7 +84,7 @@ function renderPlaces(places) {
         let text = document.createElement('a-link');
         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         text.setAttribute('title', place.name);
-        text.setAttribute('href', place.link);
+        text.setAttribute('href', 'https://www.ar3d.it');
         text.setAttribute('scale', '5 5 5');
 
         text.addEventListener('loaded', () => {
