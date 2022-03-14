@@ -93,6 +93,7 @@ function renderPlaces(places) {
         let text = document.createElement('a-link');
         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         text.setAttribute('title', place.name);
+		text.setAttribute('image', 'assets/map-marker.png');
         text.setAttribute('href', place.link);
         text.setAttribute('scale', '5 5 5');
 
