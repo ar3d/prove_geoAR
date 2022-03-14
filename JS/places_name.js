@@ -36,7 +36,15 @@ function staticLoadPlaces() {
                 lat: 40.72555620444061, // change here latitude if using static data
                 lng: 8.56526266783476, // change here longitude if using static data
             },
-			link: "https://www.ar3d.it"
+			link: "https://www.ar3d.it/"
+        },
+		{
+            name: "Ariciao!!",
+            location: {
+                lat: 40.72617414060629, // change here latitude if using static data
+                lng: 8.565589897334577, // change here longitude if using static data
+            },
+			link: "https://www.visitmolise.eu/"
         },
     ];
 }
