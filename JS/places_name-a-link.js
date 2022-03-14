@@ -93,8 +93,8 @@ function renderPlaces(places) {
         let text = document.createElement('a-link');
         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         text.setAttribute('title', place.name);
-		text.setAttribute('backgroundColor', 'white');
-		text.setAttribute('borderColor', 'red');
+		text.setAttribute('backgroundColor', '#fdf7f7');
+		text.setAttribute('borderColor', '#ff0000');
         text.setAttribute('href', place.link);
         text.setAttribute('scale', '5 5 5');
 
