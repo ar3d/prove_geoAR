@@ -68,7 +68,7 @@ div.debug {
 	animation: loadingspin 1s linear infinite;
 }
 
-.a-link {
+a-link {
     titleColor: #ff0000;
 	backgroundColor: white:
 	borderColor: red;
