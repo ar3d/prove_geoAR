@@ -95,7 +95,6 @@ function renderPlaces(places) {
         text.setAttribute('title', place.name);
         text.setAttribute('href', place.link);
         text.setAttribute('scale', '5 5 5');
-		text.setAttribute('position', '0 5 0');
 
         text.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded', { detail: { component: this.el }}))
