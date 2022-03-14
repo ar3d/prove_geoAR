@@ -68,10 +68,6 @@ div.debug {
 	animation: loadingspin 1s linear infinite;
 }
 
-.icona {
-    backgroundColor: white;
-    borderColor: red;
-}
 
 
 @keyframes loadingspin {
