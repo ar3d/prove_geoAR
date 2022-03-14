@@ -68,6 +68,12 @@ div.debug {
 	animation: loadingspin 1s linear infinite;
 }
 
+.text {
+    titleColor: #ff0000;
+	backgroundColor: white:
+	borderColor: red;
+}
+
 @keyframes loadingspin {
 	100% {
 			transform: rotate(360deg)
