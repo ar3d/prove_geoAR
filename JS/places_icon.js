@@ -9,7 +9,7 @@ const loadPlaces = function(coords) {
                 lat: 40.72555620444061, // change here latitude if using static data
                 lng: 8.56526266783476, // change here longitude if using static data
             },
-			immagine: ""assets/map-marker.png"
+			immagine: "assets/map-marker.png"
         },
 		{
             name: "Ariciao!!",
