@@ -35,14 +35,16 @@ function staticLoadPlaces() {
             location: {
                 lat: 40.72555620444061, // change here latitude if using static data
                 lng: 8.56526266783476, // change here longitude if using static data
-            }
+            },
+			link: "https://www.ar3d.it/"
         },
 		{
             name: "Ariciao!!",
             location: {
                 lat: 40.72617414060629, // change here latitude if using static data
                 lng: 8.565589897334577, // change here longitude if using static data
-            }
+            },
+			link: "https://www.visitmolise.eu/"
         },
     ];
 }
@@ -87,14 +89,12 @@ function renderPlaces(places) {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
 
-        // add place icon
-                    const icon = document.createElement('a-image');
-                    icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-                    icon.setAttribute('name', place.name);
-                    icon.setAttribute('src', 'assets/map-marker.png');
-
-                    // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-                    icon.setAttribute('scale', '2, 2');
+        // add place name
+        let icon = document.createElement('a-image');
+        icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        icon.setAttribute('title', place.name);
+        icon.setAttribute('src', 'assets/map-marker.png');
+        icon.setAttribute('scale', '5 5 5');
 		
 
         icon.addEventListener('loaded', () => {
@@ -104,3 +104,5 @@ function renderPlaces(places) {
         scene.appendChild(icon);
     });
 }
+
+
