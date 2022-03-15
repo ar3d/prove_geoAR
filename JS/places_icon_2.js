@@ -124,7 +124,7 @@ const clickListener = function (ev) {
         }, 1500);
      }
  };
-
+icon.addEventListener('click', clickListener);
         scene.appendChild(icon);
     });
 }
