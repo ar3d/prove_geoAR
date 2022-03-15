@@ -78,7 +78,7 @@ window.onload = () => {
                     const icon = document.createElement('a-image');
                     icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
                     icon.setAttribute('name', place.name);
-                    icon.setAttribute('src', 'immagine');
+                    icon.setAttribute('src', place.immagine);
 
                     // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
                     icon.setAttribute('scale', '2, 2');
