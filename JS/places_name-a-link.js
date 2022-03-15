@@ -95,8 +95,8 @@ function renderPlaces(places) {
         text.setAttribute('title', place.name);
         text.setAttribute('href', place.link);
         text.setAttribute('scale', '5 5 5');
-		text.setAttribute('image', 'assets/verde.jpg');
-		text.setAttribute('visualAspectEnabled', 'true');
+		text.setAttribute('img', 'assets/verde.jpg');
+		
 
         text.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded', { detail: { component: this.el }}))
