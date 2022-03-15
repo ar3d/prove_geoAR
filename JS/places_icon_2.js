@@ -97,13 +97,9 @@ function renderPlaces(places) {
         icon.setAttribute('scale', '5 5 5');
 		
 
-        icon.addEventListener('loaded', () => {
-            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded', { detail: { component: this.el }}))
-        });
+        
+        icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
 
-        scene.appendChild(icon);
-    });
-}
 
 // this click listener has to be added simply to a click event on an a-entity element
 const clickListener = function (ev) {
@@ -129,4 +125,6 @@ const clickListener = function (ev) {
      }
  };
 
-
+        scene.appendChild(icon);
+    });
+}
