@@ -37,7 +37,7 @@ function staticLoadPlaces() {
                 lng: 8.56526266783476, // change here longitude if using static data
             },
 			image: "assets/map-marker_2.png",
-			href: "https://www.acquaepietra.it/NSDA/start_page/timeline_venafro.html/",
+			href: "https://www.acquaepietra.it/NSDA/start_page/timeline_venafro.html",
 			target: "_blank",
 			text: "vuoi saperne di più?"
         },
@@ -48,7 +48,7 @@ function staticLoadPlaces() {
                 lng: 8.565589897334577, // change here longitude if using static data
             },
 			image: "assets/map-marker.png",
-			href: "https://www.visitmolise.eu/",
+			href: "https://www.visitmolise.eu",
 			target: "_blank",
 			text: "vuoi saperne di più?"
         },
