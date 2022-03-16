@@ -36,7 +36,8 @@ function staticLoadPlaces() {
                 lat: 40.72555620444061, // change here latitude if using static data
                 lng: 8.56526266783476, // change here longitude if using static data
             },
-			image: "assets/map-marker_2.png"
+			image: "assets/map-marker_2.png",
+			html: "Ciao mondo!!<br> <a href="https://www.ar3d.it/" target="_blank">vuoi saperne di più?</a>"
         },
 		{
             name: "Ariciao!!",
@@ -44,7 +45,8 @@ function staticLoadPlaces() {
                 lat: 40.72617414060629, // change here latitude if using static data
                 lng: 8.565589897334577, // change here longitude if using static data
             },
-			image: "assets/map-marker.png"
+			image: "assets/map-marker.png",
+			html: "Ariciao mondo!!<br> <a href="https://www.visitmolise.eu/" target="_blank">vuoi saperne di più?</a>
         },
     ];
 }
@@ -106,7 +108,7 @@ const clickListener = function (ev) {
     ev.stopPropagation();
     ev.preventDefault();
 
-    const name = ev.target.getAttribute('name');
+    const name = ev.target.getAttribute('html');
     const el = ev.detail.intersection && ev.detail.intersection.object.el;
 
     if (el && el === ev.target) {
@@ -114,14 +116,14 @@ const clickListener = function (ev) {
         const label = document.createElement('span');
         const container = document.createElement('div');
         container.setAttribute('id', 'place-label');
-        label.innerText = name;
+        label.innerHTML = name;
         container.appendChild(label);
         document.body.appendChild(container);
 
         setTimeout(() => {
             // that will disappear after less than 2 seconds
             container.parentElement.removeChild(container);
-        }, 1500);
+        }, 3000);
      }
  };
 icon.addEventListener('click', clickListener);
