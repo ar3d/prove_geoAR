@@ -37,7 +37,7 @@ function staticLoadPlaces() {
                 lng: 8.56526266783476, // change here longitude if using static data
             },
 			image: "assets/map-marker_2.png",
-			html: "Ciao mondo!!<br> <a href="https://www.ar3d.it/" target="_blank">vuoi saperne di più?</a>"
+			html: Ciao mondo!!<br> <a href="https://www.ar3d.it/" target="_blank">vuoi saperne di più?</a>
         },
 		{
             name: "Ariciao!!",
@@ -46,7 +46,7 @@ function staticLoadPlaces() {
                 lng: 8.565589897334577, // change here longitude if using static data
             },
 			image: "assets/map-marker.png",
-			html: "Ariciao mondo!!<br> <a href="https://www.visitmolise.eu/" target="_blank">vuoi saperne di più?</a>
+			html: Ariciao mondo!!<br> <a href="https://www.visitmolise.eu/" target="_blank">vuoi saperne di più?</a>
         },
     ];
 }
