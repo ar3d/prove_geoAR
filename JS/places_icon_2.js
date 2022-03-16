@@ -122,8 +122,8 @@ const clickListener = function (ev) {
         // after click, we are adding a label with the name of the place
         const label = document.createElement('span');
         const container = document.createElement('div');
-        container.setAttribute('id', 'place-label');
-        label.innerHTML = name;
+        container.setAttribute('name', 'href', 'target', 'text');
+        label.innerHTML = "'name'+<br>+<a href='href'+target='target'+>'text'<a>";
         container.appendChild(label);
         document.body.appendChild(container);
 
