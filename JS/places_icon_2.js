@@ -36,7 +36,7 @@ function staticLoadPlaces() {
                 lat: 40.72555620444061, // change here latitude if using static data
                 lng: 8.56526266783476, // change here longitude if using static data
             },
-			link: "https://www.ar3d.it/"
+			image: "assets/map-marker_2.png"
         },
 		{
             name: "Ariciao!!",
@@ -44,7 +44,7 @@ function staticLoadPlaces() {
                 lat: 40.72617414060629, // change here latitude if using static data
                 lng: 8.565589897334577, // change here longitude if using static data
             },
-			link: "https://www.visitmolise.eu/"
+			image: "assets/map-marker.png"
         },
     ];
 }
@@ -93,7 +93,7 @@ function renderPlaces(places) {
         let icon = document.createElement('a-image');
         icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         icon.setAttribute('name', place.name);
-        icon.setAttribute('src', 'assets/map-marker.png');
+        icon.setAttribute('src', place.image);
         icon.setAttribute('scale', '5 5 5');
 		
 
