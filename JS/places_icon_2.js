@@ -124,7 +124,7 @@ const clickListener = function (ev) {
         const label = document.createElement('span');
         const container = document.createElement('div');
         container.setAttribute('id', 'place-label');
-        label.innerHTML = name+"<br>"+"<a href="+link+"target='_blank'>Vuoi saperne di più</a>";
+        label.innerHTML = name+"<br>"+"<a href="+link+" target='_blank'>Vuoi saperne di più</a>";
         container.appendChild(label);
         document.body.appendChild(container);
 
