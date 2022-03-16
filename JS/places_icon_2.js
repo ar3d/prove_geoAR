@@ -97,6 +97,7 @@ function renderPlaces(places) {
         icon.setAttribute('name', place.name);
         icon.setAttribute('src', place.image);
         icon.setAttribute('scale', '5 5 5');
+		icon.setAttribute('html', place.html);
 		
 
         
