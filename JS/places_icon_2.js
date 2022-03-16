@@ -116,7 +116,7 @@ const clickListener = function (ev) {
     ev.preventDefault();
 
     const name = ev.target.getAttribute('name');
-	name.setAttribute('href');
+	name.getAttribute('href');
     const el = ev.detail.intersection && ev.detail.intersection.object.el;
 	
     if (el && el === ev.target) {
