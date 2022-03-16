@@ -37,7 +37,9 @@ function staticLoadPlaces() {
                 lng: 8.56526266783476, // change here longitude if using static data
             },
 			image: "assets/map-marker_2.png",
-			html: "Ciao mondo!!"<br> <a href="https://www.ar3d.it/" target="_blank">"vuoi saperne di più?"</a>
+			href: "https://www.ar3d.it/",
+			target: "_blank",
+			text: "vuoi saperne di più?"
         },
 		{
             name: "Ariciao!!",
@@ -46,7 +48,9 @@ function staticLoadPlaces() {
                 lng: 8.565589897334577, // change here longitude if using static data
             },
 			image: "assets/map-marker.png",
-			html: "Ariciao mondo!!"<br> <a href="https://www.visitmolise.eu/" target="_blank">"vuoi saperne di più?"</a>
+			href: "https://www.visitmolise.eu/",
+			target: "_blank",
+			text: "vuoi saperne di più?"
         },
     ];
 }
@@ -97,7 +101,9 @@ function renderPlaces(places) {
         icon.setAttribute('name', place.name);
         icon.setAttribute('src', place.image);
         icon.setAttribute('scale', '5 5 5');
-		icon.setAttribute('html', place.html);
+		icon.setAttribute('href', place.html);
+		icon.setAttribute('target', place.target);
+		icon.setAttribute('text', place.text);
 		
 
         
@@ -109,7 +115,7 @@ const clickListener = function (ev) {
     ev.stopPropagation();
     ev.preventDefault();
 
-    const name = ev.target.getAttribute('html');
+    const name = ev.target.getAttribute('name');
     const el = ev.detail.intersection && ev.detail.intersection.object.el;
 
     if (el && el === ev.target) {
