@@ -116,7 +116,6 @@ const clickListener = function (ev) {
     ev.preventDefault();
 
     const name = ev.target.getAttribute('name');
-	name.getAttribute('href');
     const el = ev.detail.intersection && ev.detail.intersection.object.el;
 	
     if (el && el === ev.target) {
@@ -124,7 +123,7 @@ const clickListener = function (ev) {
         const label = document.createElement('span');
         const container = document.createElement('div');
         container.setAttribute('id', 'place-label');
-        label.innerHTML = "<a href="+href+"target='_blank'>"+name+"</a>";
+        label.innerHTML = "<a href='https://www.ar3d.it' target='_blank'>"+name+"</a>";
         container.appendChild(label);
         document.body.appendChild(container);
 
