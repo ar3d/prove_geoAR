@@ -123,7 +123,7 @@ const clickListener = function (ev) {
         const label = document.createElement('span');
         const container = document.createElement('div');
         container.setAttribute('id', 'place-label');
-        label.innerHTML = name;
+        label.innerHTML = <a href="https://www.ar3d.it" target="_blank">name</a>;
         container.appendChild(label);
         document.body.appendChild(container);
 
